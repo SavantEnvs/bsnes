@@ -1,0 +1,21 @@
+registers
+print $10 + 2 * 3
+print [$c000]
+examine $0100 16
+disassemble $0150 4
+breakpoint $0150
+list
+watch $c000
+continue
+delete
+unwatch
+cartridge
+apu
+lcd
+palettes
+dma
+backtrace
+ticks
+print a = $42
+print hl:$4000
+help print

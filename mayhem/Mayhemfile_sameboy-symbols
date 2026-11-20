@@ -1,0 +1,8 @@
+project: savantenvs/bsnes
+target: sameboy-symbols
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/sameboy-symbols/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/sameboy_symbols
+    libfuzzer: true

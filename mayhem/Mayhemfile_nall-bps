@@ -1,0 +1,8 @@
+project: savantenvs/bsnes
+target: nall-bps
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/nall-bps/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/nall_bps
+    libfuzzer: true

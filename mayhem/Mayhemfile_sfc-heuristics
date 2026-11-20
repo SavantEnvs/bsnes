@@ -1,0 +1,8 @@
+project: savantenvs/bsnes
+target: sfc-heuristics
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/sfc-heuristics/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/sfc_heuristics
+    libfuzzer: true

@@ -1,0 +1,8 @@
+project: savantenvs/bsnes
+target: nall-bml
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/nall-bml/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/nall_bml
+    libfuzzer: true

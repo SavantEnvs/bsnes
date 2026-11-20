@@ -1,0 +1,8 @@
+project: savantenvs/bsnes
+target: lzma-7z
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/lzma-7z/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/lzma_7z
+    libfuzzer: true

@@ -1,0 +1,8 @@
+project: savantenvs/bsnes
+target: nall-zip
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/nall-zip/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/nall_zip
+    libfuzzer: true

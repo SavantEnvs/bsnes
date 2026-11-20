@@ -1,0 +1,8 @@
+project: savantenvs/bsnes
+target: libretro-cheats
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/libretro-cheats/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/libretro_cheats
+    libfuzzer: true

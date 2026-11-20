@@ -1,0 +1,8 @@
+project: savantenvs/bsnes
+target: libretro-sfc
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/libretro-sfc/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/libretro_sfc
+    libfuzzer: true

@@ -1,0 +1,8 @@
+project: savantenvs/bsnes
+target: sameboy-battery
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/sameboy-battery/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/sameboy_battery
+    libfuzzer: true

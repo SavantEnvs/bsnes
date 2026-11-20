@@ -1,0 +1,10 @@
+eval ($ff40 & $80) == 0x80
+print {$c000} + 1
+breakpoint $150 if a == 2
+watch/rw $ff00 to $ff7f
+finish
+next
+step
+backtrace
+wave
+softbreak on
